@@ -1,4 +1,6 @@
+import { Button } from "@/components/ui/button";
 import { GlobeIcon } from "lucide-react";
+import Link from "next/link";
 
 const featuresDetails = [
   {
@@ -58,6 +60,9 @@ export default function Home() {
               <span className="text-blue-500">summarize PDFs</span>. using AI.
             </p>
           </div>
+          <Button asChild className="mt-10">
+            <Link href="/dashboard">Get Started</Link>
+          </Button>
         </div>
       </div>
     </main>
