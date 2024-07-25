@@ -1,4 +1,5 @@
 import { SignedIn, UserButton } from "@clerk/nextjs";
+import { FilePlus2 } from "lucide-react";
 import Link from "next/link";
 import Logo from "./Logo";
 import { Button } from "./ui/button";
@@ -13,6 +14,16 @@ function Header() {
             <Link href="/dashboard/upgrade">Dashboard</Link>
           </Button>
           {/* need to fix this later for Upgrade Button */}
+          <Button asChild variant="outline">
+            <Link href="/dashboard">Documents</Link>
+          </Button>
+
+          <Button asChild variant="link">
+            <Link href="/dashboard/upload">
+              <FilePlus2 className="text-blue-600" />
+            </Link>
+          </Button>
+
           <UserButton />
         </div>
       </SignedIn>
