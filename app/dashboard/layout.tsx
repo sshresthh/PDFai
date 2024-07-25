@@ -1,9 +1,13 @@
+import Header from "@/components/Header";
 import { ClerkLoaded } from "@clerk/nextjs";
 
 function DashboardLayout({ children }: { children: React.ReactNode }) {
   return (
     <ClerkLoaded>
-      <div>{children}</div>
+      <div>
+        <Header />
+        {children}
+      </div>
     </ClerkLoaded>
   );
 }
