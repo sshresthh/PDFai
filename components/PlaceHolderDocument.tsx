@@ -1,11 +1,13 @@
 "use client";
 
 import { PlusCircleIcon } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { Button } from "./ui/button";
 
 function PlaceHolderDocument() {
+  const router = useRouter(); // useRouter allows us to navigate to different pages
   const handleClick = () => {
-    // Add your code here
+    router.push("/dashboard/upload"); // Redirects to the upload page
   };
   return (
     <Button
