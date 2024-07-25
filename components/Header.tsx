@@ -7,7 +7,9 @@ import { Button } from "./ui/button";
 function Header() {
   return (
     <div className="flex justify-between bg-white shadow-sm p-5">
-      <Logo />
+      <Link href="/">
+        <Logo />
+      </Link>
       <SignedIn>
         <div className="flex items-center space-x-2">
           <Button asChild variant="link" className="hidden md:flex">
