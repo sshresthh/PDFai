@@ -1,5 +1,6 @@
 "use client";
 
+import { CircleArrowDownIcon, RocketIcon } from "lucide-react";
 import { useCallback } from "react";
 import { useDropzone } from "react-dropzone";
 
@@ -24,14 +25,20 @@ function FileUploader() {
           `}
       >
         <input {...getInputProps()} />
-        <div className="">
+        <div className="flex flex-col items-center justify-center">
           {isDragActive ? (
-            <p>Drop the files here ...</p>
+            <>
+              <RocketIcon className="h-20 w-20 animate-ping" />
+              <p>Drop the files here ...</p>
+            </>
           ) : (
-            <p>
-              Drag &rsquo;n&rsquo; drop some files here, or click to select
-              files
-            </p>
+            <>
+              <CircleArrowDownIcon className="h-20 w-20 animate-bounce" />
+              <p>
+                Drag &rsquo;n&rsquo; drop some files here, or click to select
+                files
+              </p>
+            </>
           )}
         </div>
       </div>
