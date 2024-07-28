@@ -6,12 +6,20 @@ import { useDropzone } from "react-dropzone";
 
 function FileUploader() {
   const onDrop = useCallback((acceptedFiles: File[]) => {
-    console.log(acceptedFiles); //logging
-    // Do something with the files
+    const file = acceptedFiles[0];
+    if (file) {
+      //await handleUpload(file)
+    } else {
+      // handleerror
+    }
   }, []);
   const { getRootProps, getInputProps, isDragActive, isFocused, isDragAccept } =
     useDropzone({
       onDrop,
+      maxFiles: 1,
+      accept: {
+        "application/pdf": [".pdf"],
+      }
     });
   return (
     <div className="flex flex-col gap-4 items-center max-w-7xl mx-auto">
