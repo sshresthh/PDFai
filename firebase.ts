@@ -2,11 +2,10 @@ import {getApp, getApps, initializeApp} from "firebase/app"
 import {getFirestore} from "firebase/firestore"
 import {getStorage} from "firebase/storage"
 import { getAnalytics } from "firebase/analytics";
-import {firebase_API} from "@/firebase_api"
 
 const firebaseConfig = {
-    apiKey: firebase_API,
-    authDomain: "pdfai-sshresthh.firebaseapp.com",
+    apiKey: `${process.env.FIREBASE_API_KEY}`,
+    authDomain: `${process.env.FIREBASE_AUTH_DOMAIN}`,
     projectId: "pdfai-sshresthh",
     storageBucket: "pdfai-sshresthh.appspot.com",
     messagingSenderId: "376560166055",

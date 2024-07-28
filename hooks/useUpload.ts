@@ -12,7 +12,7 @@ export enum StatusText {
 
 export type Status = StatusText[keyof StatusText];
 
-export function useUpload() {
+function useUpload() {
     const [progress, setProgress] = useState<number | null>(null);
     const [fileId, setFileId] = useState<string | null>(null);
     const [status, setStatus] = useState<string | null>(null);
@@ -20,7 +20,11 @@ export function useUpload() {
     const router = useRouter;
     const handleUpload = async(file:File) => {
         if (!file || !user) return;
+
+        //
         
     }
 }
+
+export default useUpload;
 

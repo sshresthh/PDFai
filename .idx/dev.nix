@@ -5,7 +5,13 @@
   ];
   idx.extensions = [
     
-  ];
+  
+ "bradlc.vscode-tailwindcss"
+ "dbaeumer.vscode-eslint"
+ "esbenp.prettier-vscode"
+ "formulahendry.auto-rename-tag"
+ "mikestead.dotenv"
+ "xabikos.JavaScriptSnippets"];
   idx.previews = {
     previews = {
       web = {
