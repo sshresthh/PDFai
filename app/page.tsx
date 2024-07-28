@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { GlobeIcon } from "lucide-react";
+import { Globe, BookOpenCheck, Sparkle, NotebookPen, Share, Ellipsis } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,32 +7,32 @@ const featuresDetails = [
   {
     name: "Feature 1",
     description: "Upload and store all your PDFs in one place",
-    icon: GlobeIcon,
+    icon: Globe,
   },
   {
     name: "Feature 2",
     description: "Easily summarize your PDFs",
-    icon: GlobeIcon,
+    icon: BookOpenCheck,
   },
   {
     name: "Feature 3",
     description: "Enjoy a clean and simple interface",
-    icon: GlobeIcon,
+    icon: Sparkle,
   },
   {
     name: "Feature 4",
     description: "Customize your reading experience",
-    icon: GlobeIcon,
+    icon: NotebookPen,
   },
   {
     name: "Feature 5",
     description: "Share your PDFs with friends",
-    icon: GlobeIcon,
+    icon: Share,
   },
   {
     name: "Feature 6",
-    description: "And more...",
-    icon: GlobeIcon,
+    description: "And many more other features",
+    icon: Ellipsis,
   },
 ];
 
