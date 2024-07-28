@@ -15,8 +15,11 @@
     "class-variance-authority": "^0.7.0",
     "clerk": "^0.8.3",
     "clsx": "^2.1.1",
+<<<<<<< HEAD
     "firebase": "^10.12.4",
     "firebase-admin": "^12.3.0",
+=======
+>>>>>>> parent of 5e6e4a4 ((added) firebase)
     "lucide-react": "^0.416.0",
     "next": "14.2.5",
     "react": "^18",
