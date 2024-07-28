@@ -1,7 +1,5 @@
 'use client'
 import {useState} from 'react';
-import {useUser} from '@clerk/nextjs';
-import {useRouter} from "next/navigation";
 
 export enum StatusText {
     UPLOADING = "Uploading file...",
@@ -20,7 +18,7 @@ export function useUpload() {
     const router = useRouter;
     const handleUpload = async(file:File) => {
         if (!file || !user) return;
-
+        
     }
 }
 
