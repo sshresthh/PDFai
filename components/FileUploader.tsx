@@ -5,10 +5,13 @@ import { useCallback } from "react";
 import { useDropzone } from "react-dropzone";
 
 function FileUploader() {
-  const onDrop = useCallback((acceptedFiles: File[]) => {
+
+  const {progress, status, fileId, handleUpload} = useUpload();
+
+  const onDrop = useCallback(async (acceptedFiles: File[]) => {
     const file = acceptedFiles[0];
     if (file) {
-      //await handleUpload(file)
+      await handleUpload(file)
     } else {
       // handleerror
     }
