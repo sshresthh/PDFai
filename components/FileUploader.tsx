@@ -26,7 +26,7 @@ function FileUploader() {
     } else {
       // handleerror
     }
-  }, [handleUpload]);
+  }, []);
   const { getRootProps, getInputProps, isDragActive, isFocused, isDragAccept } =
     useDropzone({
       onDrop,
