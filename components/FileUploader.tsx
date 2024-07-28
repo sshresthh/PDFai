@@ -1,10 +1,10 @@
 "use client";
 
-import {useUpload} from "@/hooks/useUpload"
 import { CircleArrowDownIcon, RocketIcon } from "lucide-react";
 import { useCallback } from "react";
 import { useDropzone } from "react-dropzone";
-import { useUpload } from "../hook/useUpload";
+import { useUpload } from "@/hooks/useUpload";
+
 
 function FileUploader() {
 
