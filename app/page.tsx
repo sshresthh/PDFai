@@ -43,7 +43,7 @@ export default function Home() {
         <div className="flex flex-col justify-center text-center items-center mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl sm:text-center">
             <h2 className="text-base font-semibold leading-7 text-blue-500">
-              Not Your Average PDF Reader
+              Not Your Normal PDF Reader
             </h2>
             <p className="mt-2 text-2xl font-semibold tracking-tight text-slate-800 sm:text-1xl">
               Understand your PDFs in a better way using PDFai
