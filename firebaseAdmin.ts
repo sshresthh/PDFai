@@ -9,4 +9,10 @@ if (getApps().length == 0) {
     app = initializeApp({
         credential: cert(serviceKey),
     });
+} else {
+    app = getApp()
 }
+
+const adminDb = getFirestore(app);
+
+export {adminDb, app as adminApp};
