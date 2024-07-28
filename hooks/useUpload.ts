@@ -22,7 +22,7 @@ function useUpload() {
     const [fileId, setFileId] = useState<string | null>(null);
     const [status, setStatus] = useState<string | null>(null);
     const {user} = useUser();
-    const router = useRouter;
+    const router = useRouter; //using this later.
     const handleUpload = async(file:File) => {
         if (!file || !user) return;
 
